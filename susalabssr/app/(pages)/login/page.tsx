@@ -40,7 +40,7 @@ export default function LoginPage() {
         setLoading(true);
 
         try {
-            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susaweb-backend.el.r.appspot.com'}/Admin/login`, {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susalabs.onrender.com'}/Admin/login`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

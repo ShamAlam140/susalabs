@@ -25,7 +25,7 @@ export default function ChatUserPage() {
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susaweb-backend.el.r.appspot.com'}/ChatForm/GetAll`);
+                const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susalabs.onrender.com'}/ChatForm/GetAll`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch data');
                 }

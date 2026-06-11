@@ -64,7 +64,7 @@ const PublicBlog: React.FC = () => {
         try {
             setLoading(true);
 
-            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susaweb-backend.el.r.appspot.com'}/Blog/Allblog?page=${page}&limit=6`);
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susalabs.onrender.com'}/Blog/Allblog?page=${page}&limit=6`);
             const data: BlogResponse = await response.json();
 
             const blogsWithReadTime = data.blogs.map((blog: BlogPost) => ({

@@ -71,7 +71,7 @@ export default function AddBlogForm(): React.ReactElement {
                     const data = new FormData();
                     data.append("file", file);
 
-                    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susaweb-backend.el.r.appspot.com'}/Blog/upload-inline-image`, {
+                    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susalabs.onrender.com'}/Blog/upload-inline-image`, {
                         method: "POST",
                         headers: {
                             Authorization: `Bearer ${token}`,
@@ -172,7 +172,7 @@ export default function AddBlogForm(): React.ReactElement {
                 data.append("file", formData.file);
             }
 
-            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susaweb-backend.el.r.appspot.com'}/Blog/Addblog`, {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susalabs.onrender.com'}/Blog/Addblog`, {
                 method: "POST",
                 headers: {
                     Authorization: `Bearer ${token}`,

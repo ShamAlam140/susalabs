@@ -24,7 +24,7 @@ async function getBlogContent(blogTitle: string, id?: string): Promise<BlogPost 
     try {
         // 1. If we have an ID, fetch the full blog directly (Fastest)
         if (id) {
-            const response = await fetch(`https://susaweb-backend.el.r.appspot.com/Blog/blog/${id}`, {
+            const response = await fetch(`https://susalabs.onrender.com/Blog/blog/${id}`, {
                 cache: 'no-store', // Always get fresh content
             });
             if (response.ok) {
@@ -34,7 +34,7 @@ async function getBlogContent(blogTitle: string, id?: string): Promise<BlogPost 
 
         // 2. If no ID or ID fetch failed, we must find it by title in the list
         // Note: For better SEO, consider adding a backend endpoint /Blog/by-slug/:slug
-        const listResponse = await fetch('https://susaweb-backend.el.r.appspot.com/Blog/Allblog', {
+        const listResponse = await fetch('https://susalabs.onrender.com/Blog/Allblog', {
             cache: 'no-store',
         });
 
@@ -53,7 +53,7 @@ async function getBlogContent(blogTitle: string, id?: string): Promise<BlogPost 
 
                 if (foundBlog) {
                     // Fetch the full details for this found blog to get the description
-                    const detailResponse = await fetch(`https://susaweb-backend.el.r.appspot.com/Blog/blog/${foundBlog._id}`, {
+                    const detailResponse = await fetch(`https://susalabs.onrender.com/Blog/blog/${foundBlog._id}`, {
                         cache: 'no-store',
                     });
                     if (detailResponse.ok) {

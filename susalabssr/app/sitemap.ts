@@ -5,7 +5,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     let blogRoutes: MetadataRoute.Sitemap = [];
     try {
-        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susaweb-backend.el.r.appspot.com'}/Blog/Allblog`, {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susalabs.onrender.com'}/Blog/Allblog`, {
             next: { revalidate: 3600 } // Revalidate every hour
         });
 

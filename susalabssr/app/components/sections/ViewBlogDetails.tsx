@@ -59,10 +59,10 @@ const ViewBlogDetails: React.FC<ViewBlogDetailsProps> = ({ initialBlog }) => {
                 let blogData: BlogPost | null = null;
 
                 if (_id) {
-                    const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL || 'https://susaweb-backend.el.r.appspot.com'}/Blog/blog/${_id}`);
+                    const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL || 'https://susalabs.onrender.com'}/Blog/blog/${_id}`);
                     blogData = response.data;
                 } else if (blogTitle) {
-                    const allBlogsResponse = await axios.get(`${process.env.NEXT_PUBLIC_API_URL || 'https://susaweb-backend.el.r.appspot.com'}/Blog/Allblog`);
+                    const allBlogsResponse = await axios.get(`${process.env.NEXT_PUBLIC_API_URL || 'https://susalabs.onrender.com'}/Blog/Allblog`);
                     blogData = allBlogsResponse.data.blogs?.find(
                         (b: BlogPost) =>
                             b.blogTitle

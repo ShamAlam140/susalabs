@@ -66,7 +66,7 @@ export default function CareersList() {
             const authData = localStorage.getItem('authData');
             const token = authData ? JSON.parse(authData).token : '';
 
-            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susaweb-backend.el.r.appspot.com'}/Resume/resume-get`, {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susalabs.onrender.com'}/Resume/resume-get`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
@@ -106,7 +106,7 @@ export default function CareersList() {
             const authData = localStorage.getItem('authData');
             const token = authData ? JSON.parse(authData).token : '';
 
-            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susaweb-backend.el.r.appspot.com'}/Resume/Dresume/${resumeToDelete}`, {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susalabs.onrender.com'}/Resume/Dresume/${resumeToDelete}`, {
                 method: 'DELETE',
                 headers: {
                     'Authorization': `Bearer ${token}`

@@ -91,7 +91,7 @@ const ProductShowcase: React.FC<ProductShowcaseProps> = ({ initialProducts = [] 
             }
 
             // Fetch from API if cache is invalid or empty
-            const { data } = await axios.get(`${process.env.NEXT_PUBLIC_API_URL || 'https://susaweb-backend.el.r.appspot.com'}/project/getAll`);
+            const { data } = await axios.get(`${process.env.NEXT_PUBLIC_API_URL || 'https://susalabs.onrender.com'}/project/getAll`);
             setAllProducts(data);
             cacheProducts(data);
         } catch (err) {
@@ -178,7 +178,7 @@ const ProductShowcase: React.FC<ProductShowcaseProps> = ({ initialProducts = [] 
                 projectUrl: selectedProduct?.link,
             };
 
-            await axios.post(`${process.env.NEXT_PUBLIC_API_URL || 'https://susaweb-backend.el.r.appspot.com'}/user/register`, payload);
+            await axios.post(`${process.env.NEXT_PUBLIC_API_URL || 'https://susalabs.onrender.com'}/user/register`, payload);
             setSubmissionStatus('success');
         } catch (err) {
             console.error('Submission error:', err);

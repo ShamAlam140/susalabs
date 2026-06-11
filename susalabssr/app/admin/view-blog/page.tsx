@@ -29,7 +29,7 @@ export default function ViewBlogPage() {
     useEffect(() => {
         const fetchBlogs = async () => {
             try {
-                const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL || 'https://susaweb-backend.el.r.appspot.com'}/Blog/Allblog`);
+                const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL || 'https://susalabs.onrender.com'}/Blog/Allblog`);
                 // API returns { blogs: [...], pagination: {...} } or direct array
                 const blogsData = response.data.blogs || response.data;
                 const blogsArray = Array.isArray(blogsData) ? blogsData : [];
@@ -88,7 +88,7 @@ export default function ViewBlogPage() {
                     return;
                 }
 
-                await axios.delete(`${process.env.NEXT_PUBLIC_API_URL || 'https://susaweb-backend.el.r.appspot.com'}/Blog/delete/${id}`, {
+                await axios.delete(`${process.env.NEXT_PUBLIC_API_URL || 'https://susalabs.onrender.com'}/Blog/delete/${id}`, {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },

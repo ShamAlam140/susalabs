@@ -24,7 +24,7 @@ export default function AddProductForm() {
         }
 
         try {
-            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susaweb-backend.el.r.appspot.com'}/project/add`, {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susalabs.onrender.com'}/project/add`, {
                 method: "POST",
                 body: formData,
             });

@@ -74,7 +74,7 @@ export default function AdminLayout({
             const authData = JSON.parse(localStorage.getItem('authData') || '{}');
             const token = authData?.token;
 
-            await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susaweb-backend.el.r.appspot.com'}/Admin/logout`, {
+            await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susalabs.onrender.com'}/Admin/logout`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

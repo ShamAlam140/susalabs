@@ -56,7 +56,7 @@ const CareersPage: React.FC = () => {
                 formDataToSend.append('resume', formData.resume);
             }
 
-            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susaweb-backend.el.r.appspot.com'}/Resume/resume`, {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susalabs.onrender.com'}/Resume/resume`, {
                 method: 'POST',
                 body: formDataToSend,
             });

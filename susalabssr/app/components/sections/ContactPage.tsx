@@ -21,7 +21,7 @@ const ContactPage: React.FC = () => {
         e.preventDefault();
 
         try {
-            const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susaweb-backend.el.r.appspot.com'}/ContactForm/contactform`, {
+            const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susalabs.onrender.com'}/ContactForm/contactform`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

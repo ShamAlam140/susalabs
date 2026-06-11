@@ -39,7 +39,7 @@ export default function ContactFormDataPage() {
 
                 const authData: AuthData = JSON.parse(authDataString);
                 const response = await axios.get(
-                    `${process.env.NEXT_PUBLIC_API_URL || 'https://susaweb-backend.el.r.appspot.com'}/ContactForm/contact-form`,
+                    `${process.env.NEXT_PUBLIC_API_URL || 'https://susalabs.onrender.com'}/ContactForm/contact-form`,
                     {
                         headers: {
                             'Authorization': `Bearer ${authData.token}`,

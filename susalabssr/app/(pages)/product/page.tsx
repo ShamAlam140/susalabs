@@ -17,7 +17,7 @@ const ProductShowcase = dynamic(
 
 async function getProducts() {
     try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susaweb-backend.el.r.appspot.com'}/project/getAll`, {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susalabs.onrender.com'}/project/getAll`, {
             next: { revalidate: 300 }, // Cache for 5 minutes
         });
         if (!res.ok) return [];

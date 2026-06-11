@@ -30,7 +30,7 @@ export default function DemoRequestPage() {
         const fetchData = async () => {
             setLoading(true);
             try {
-                const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susaweb-backend.el.r.appspot.com'}/user/getAll`);
+                const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susalabs.onrender.com'}/user/getAll`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch data');
                 }
