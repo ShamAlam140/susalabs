@@ -24,6 +24,7 @@ app.use(express.json({ limit: '50mb' }));
 const corsOptions = {
   origin: [
     'http://localhost:3000',
+    'https://susalabs.vercel.app',
 
     'https://susalabs.com',
     'https://www.susalabs.com'
