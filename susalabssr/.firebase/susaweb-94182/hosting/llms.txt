@@ -1,0 +1,86 @@
+# susalabs.com llms.txt
+
+> SusaLabs is a global custom software development company powered by AI, delivering end-to-end product engineering, AI automation, CRM systems, and cloud solutions for startups, SMEs, and enterprises across healthcare, finance, education, telecom, energy, and retail.
+
+SusaLabs is headquartered at 625 Union Hill Rd, Alpharetta, GA 30004, USA, with development teams in India and the USA. The company is co-founded by Gautam Gianchandi (CEO, 33+ years experience) and Sunil Mudgal (CTO, 15+ years experience). SusaLabs partners with government bodies, defence organizations, and global corporations including the Indian Army, Google, TRAI, Nepal Telecom, and the US Congress Library.
+
+## Core Services
+
+- Custom Software Development: Bespoke software for startups, SMEs, and enterprises; full-stack web and mobile applications; legacy system modernization using cloud-native microservices and Kubernetes
+- AI & Machine Learning: AI-powered diagnostics, automation, and intelligent workflow systems; deep learning and NLP integrations
+- CRM Development: Custom CRM tools for patient and client management, especially in healthcare
+- Healthcare Software: HIPAA-compliant medical software, AI-driven diagnostics, digital health records, custom medical software development
+- Cloud & DevOps: AWS, Azure, GCP deployments; Docker, Kubernetes, Terraform, CI/CD pipelines
+- Blockchain Development: Smart contracts with Solidity, Ethereum, and Hyperledger; tamper-proof claim records
+- IoT Solutions: Industry 4.0, predictive maintenance, smart factory automation
+- Digital Marketing: SEO, SMO, content marketing, PPC campaign management
+
+## Industry Solutions
+
+- Automobile Insurance: AI-powered risk assessment and fraud reduction
+- Claim Settlement: Automated platform reducing processing time by 70%; blockchain-backed records
+- Banking: Open API core banking with real-time transactions and fintech integrations
+- Industrial / Manufacturing: IoT-enabled predictive maintenance and smart factory automation
+- Education ERP: Administration, virtual learning, and student analytics platforms
+- Health Insurance: Automated claim verification and pre-authorization; up to 40% reduction in processing costs
+
+## Technology Stack
+
+Languages: Java, Python, JavaScript, TypeScript, C++, C#, Go, Rust, Kotlin, Swift, PHP, Ruby, HTML, CSS
+Frontend: React, Angular, Vue.js, Svelte, Next.js, Nuxt.js, Tailwind, Bootstrap
+Backend: Node.js, Express, Django, Flask, Spring, Laravel, Ruby on Rails, ASP.NET
+Databases: MySQL, PostgreSQL, MongoDB, Redis, Oracle, SQL Server, Firebase, DynamoDB
+Cloud & DevOps: AWS, Azure, GCP, Docker, Kubernetes, Terraform, Ansible, Jenkins, GitLab CI, GitHub Actions
+Mobile: React Native, Flutter, Android, iOS
+AI/ML: TensorFlow, PyTorch, Keras, OpenCV, NLTK
+Blockchain: Solidity, Ethereum, Hyperledger
+APIs & Protocols: GraphQL, REST API, WebSocket, WebRTC
+Other: Electron, WebAssembly, Quantum Computing (R&D), AR/VR, 5G Edge
+
+## Key Pages
+
+- Home: https://susalabs.com/
+- Industry Solutions / Products: https://susalabs.com/product
+- AI Solutions: https://susalabs.com/solutions/ai
+- CRM solutions: https://susalabs.com/solutions/crm
+- ERP development: https://susalabs.com/solutions/erp
+- Software development: https://susalabs.com/solutions/software-development
+- IOT software solutions: https://susalabs.com/solutions/iot
+- Blockchain solutions: https://susalabs.com/solutions/blockchain
+- Generative AI: https://susalabs.com/generativeAi
+- Quantum Solutions: https://susalabs.com/solutions/quantum
+- Our Team: https://susalabs.com/our-team
+- Blog: https://susalabs.com/public-blog
+- Careers: https://susalabs.com/careers
+- Contact: https://susalabs.com/contact-us
+- Office Locations: https://susalabs.com/office-pages
+- Privacy Policy: https://susalabs.com/privacy-policy
+- Cookie Policy: https://susalabs.com/cookies-policy
+
+## Leadership Team
+
+- Gautam Gianchandi - CEO & Co-Founder (33+ years; international expansion, financial strategy, procurement; European telecom, IT, finance)
+- Sunil Mudgal - CTO & Co-Founder (15+ years; technical architecture, product management, investment strategy)
+- King Koduru - Education Director (28+ years; EdTech, community building, social impact; US-based)
+- Arti Radhwani - Business Strategist (22+ years; stakeholder management, business consulting, client management)
+- Vinit Arora - Business Development Director (15+ years; global expansion, strategic planning, executive relations)
+
+## Partners
+
+- PCU - Strategic Partner
+- ITI (India Telecom) - Government Partner
+- REIL (Rajasthan Electronics & Instruments Ltd) - Energy Partner
+- Railtel - Telecom / Digital Transformation Partner
+- CEL (Central Electronics Limited) - Technology Partner
+- Braithwait & Co, Kolkata - Manufacturing Partner
+
+## Key Clients
+
+Indian Army, Defence Ministry of India, TRAI, Google, Singapore Embassy, OMCI Oil & Gas, Nepal Telecom, US Congress Library, Constitution Club of India, AFMS/DGAFMS, SM Group, SAR Group, GSMA
+
+## Contact
+
+- Email: contact@susalabs.com
+- Phone: +1 (478) 888-4458
+- Address: 625 Union Hill Rd, Alpharetta, GA 30004, USA
+- Website: https://susalabs.com

@@ -1,0 +1,15 @@
+{
+    "hosting": {
+        "source": ".",
+        "ignore": [
+            "firebase.json",
+            "**/.*",
+            "**/node_modules/**"
+        ],
+        "frameworksBackend": {
+            "region": "asia-south1",
+            "maxInstances": 20,
+            "concurrency": 80
+        }
+    }
+}

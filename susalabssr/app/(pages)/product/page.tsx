@@ -1,0 +1,34 @@
+import dynamic from 'next/dynamic';
+
+// Lazy load the heavy component
+const ProductShowcase = dynamic(
+    () => import('@/app/components/sections/ProductShowcase'),
+    {
+        loading: () => (
+            <div className="min-h-screen flex items-center justify-center bg-gray-50">
+                <div className="flex flex-col items-center gap-4">
+                    <div className="h-16 w-16 animate-spin rounded-full border-4 border-gray-200 border-t-indigo-600" />
+                    <p className="text-lg font-medium text-gray-600 animate-pulse">Loading...</p>
+                </div>
+            </div>
+        ),
+    }
+);
+
+async function getProducts() {
+    try {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://susaweb-backend.el.r.appspot.com'}/project/getAll`, {
+            next: { revalidate: 300 }, // Cache for 5 minutes
+        });
+        if (!res.ok) return [];
+        return res.json();
+    } catch (e) {
+        console.error('Failed to fetch products:', e);
+        return [];
+    }
+}
+
+export default async function ProductPageRoute() {
+    const products = await getProducts();
+    return <ProductShowcase initialProducts={products} />;
+}
