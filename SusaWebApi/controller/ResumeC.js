@@ -1,4 +1,5 @@
 const Resume = require('../Model/Resume'); // Adjust the path as per your file structure
+const sendEmailNotification = require("../utils/sendEmail");
 
 // Controller method to create a new resume entry
 const createResume = async (req, res) => {
@@ -22,6 +23,20 @@ const createResume = async (req, res) => {
 
         // Save the new resume
         await newResume.save();
+
+        // Trigger email notification asynchronously
+        const emailSubject = `New Job Application: ${newResume.name}`;
+        const emailHtml = `
+          <h2>New Job Application Received</h2>
+          <p><strong>Candidate Name:</strong> ${newResume.name}</p>
+          <p><strong>Phone:</strong> <a href="tel:${newResume.number}">${newResume.number}</a></p>
+          <p><strong>Education:</strong> ${newResume.education}</p>
+          <p><strong>Address:</strong> ${newResume.address || 'Not Provided'}</p>
+          <p><strong>Resume Document:</strong> ${newResume.resume ? `<a href="${newResume.resume}" target="_blank" style="padding: 6px 12px; background-color: #007bff; color: white; text-decoration: none; border-radius: 4px; display: inline-block;">View/Download Resume</a>` : 'No file uploaded'}</p>
+          <hr/>
+          <p><em>Received at: ${new Date(newResume.createdAt || Date.now()).toLocaleString()}</em></p>
+        `;
+        sendEmailNotification(emailSubject, emailHtml);
 
         // Respond with success message
         console.log("Resume saved successfully:", newResume);
