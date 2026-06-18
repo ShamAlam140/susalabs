@@ -36,6 +36,7 @@ const createResume = async (req, res) => {
           <hr/>
           <p><em>Received at: ${new Date(newResume.createdAt || Date.now()).toLocaleString()}</em></p>
         `;
+        console.log(`📄 [Job Application/Resume] New application from ${newResume.name}. Sending email notification...`);
         sendEmailNotification(emailSubject, emailHtml);
 
         // Respond with success message

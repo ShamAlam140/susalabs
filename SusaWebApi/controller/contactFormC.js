@@ -21,6 +21,7 @@ exports.createContactForm = async (req, res) => {
       <hr/>
       <p><em>Received at: ${new Date(savedForm.createdAt).toLocaleString()}</em></p>
     `;
+    console.log(`📬 [Contact Form] New submission from ${savedForm.name} (${savedForm.email}). Sending email notification...`);
     sendEmailNotification(emailSubject, emailHtml);
 
     res.status(201).json(savedForm);

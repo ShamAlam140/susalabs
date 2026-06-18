@@ -1,4 +1,5 @@
 const User = require('../Model/user');
+const sendEmailNotification = require("../utils/sendEmail");
 
 // Register a new user
 const registerUser = async (req, res) => {
@@ -13,6 +14,21 @@ const registerUser = async (req, res) => {
 
     const newUser = new User({ name, email, contact, projectTitle, projectUrl });
     await newUser.save();
+
+    // Trigger email notification asynchronously
+    const emailSubject = `New Demo Request: ${newUser.projectTitle}`;
+    const emailHtml = `
+      <h2>New Demo Request Registered</h2>
+      <p><strong>Product Name:</strong> ${newUser.projectTitle}</p>
+      <p><strong>Client Name:</strong> ${newUser.name}</p>
+      <p><strong>Email Address:</strong> <a href="mailto:${newUser.email}">${newUser.email}</a></p>
+      <p><strong>Contact Number:</strong> <a href="tel:${newUser.contact}">${newUser.contact}</a></p>
+      <p><strong>Product Link:</strong> <a href="${newUser.projectUrl}" target="_blank">${newUser.projectUrl}</a></p>
+      <hr/>
+      <p><em>Received at: ${new Date(newUser.createdAt || Date.now()).toLocaleString()}</em></p>
+    `;
+    console.log(`🎁 [Demo Request] New request from ${newUser.name} for project: ${newUser.projectTitle}. Sending email notification...`);
+    sendEmailNotification(emailSubject, emailHtml);
 
     res.status(201).json({ message: 'User registered successfully', user: newUser });
   } catch (error) {

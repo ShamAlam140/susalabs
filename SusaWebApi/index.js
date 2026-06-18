@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 
 const cors = require('cors');
@@ -39,6 +40,12 @@ app.use(cors(corsOptions));
 
 // Handle preflight requests
 app.options('*', cors(corsOptions));
+
+// Global request logger
+app.use((req, res, next) => {
+  console.log(`🌐 [Request] ${req.method} ${req.originalUrl || req.url}`);
+  next();
+});
 
 const ContactForm = require('./Router/contactR');
 app.use('/ContactForm', ContactForm);

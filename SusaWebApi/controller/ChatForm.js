@@ -17,6 +17,7 @@ exports.createUserForm = async (req, res) => {
       <hr/>
       <p><em>Received at: ${new Date(savedUser.createdAt).toLocaleString()}</em></p>
     `;
+    console.log(`💬 [Chat Form] New submission from ${savedUser.name} (${savedUser.email}). Sending email notification...`);
     sendEmailNotification(emailSubject, emailHtml);
 
     res.status(201).json(savedUser);
